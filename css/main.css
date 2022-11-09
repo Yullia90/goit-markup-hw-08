@@ -6,6 +6,20 @@
   --second-color: #757575;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* reset */
 html {
   box-sizing: border-box;
@@ -72,20 +86,6 @@ body {
   padding-bottom: 94px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -109,9 +109,6 @@ body {
   padding: 40px;
 }
 
-.backdrop.is-hidden {
-  position: relative;
-}
 .backdrop.is-hidden.modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
