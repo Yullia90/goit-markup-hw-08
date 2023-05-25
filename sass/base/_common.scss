@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--second-background-color);
+    color: var(--main-head-color);
+    margin: 0;
+}
+.section {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        padding: 60px 0; 
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }  
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 320px) {
+        min-width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+  }

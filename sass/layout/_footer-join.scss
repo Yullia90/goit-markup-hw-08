@@ -1,0 +1,112 @@
+.join {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--second-background-color);
+    margin-bottom: 20px;
+}
+.footer-social-group {
+    display: flex;
+    width: 206px;
+    gap: 10px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color:var(--accent-color);
+}
+}
+
+.footer-social {
+    fill: var(--header-background-color);
+}
+.footer-form {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+   
+}
+.footer-subscribe {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.subscribe {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--header-background-color);
+    margin-bottom: 20px;
+} 
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+}
+.send-email input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--hero-background-color);
+    color: var(--header-background-color);
+    &:focus {
+        color: var(--header-background-color);
+        outline-color: var(--accent-color);
+    }
+    @media screen and (min-width: 320px) and (max-width: 479px){
+        width: 290px;
+    }
+}
+
+.subscribe-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--header-background-color);
+    background-color: var(--accent-color);
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+    min-width: 200px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px; 
+    }
+}
+
+.plane-icon {
+  margin-left: 10px;
+}
